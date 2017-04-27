@@ -27,7 +27,9 @@
         <tbody id="results"></tbody>
       </table>
     </main>
-    <script src="index.js"></script>
+    <script src="index.js">
+        document.getElementById("results").innerHTML = rows.join(' ');
+    </script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
     <script src="node_modules/mocha/mocha.js"></script>
